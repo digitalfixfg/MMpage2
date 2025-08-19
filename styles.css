@@ -1,0 +1,241 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Fuente global: Poppins */
+body, h1, h2, h3, p, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Espaciado entre columnas */
+.header-contenido > div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Estilo del header */
+header {
+  background-color: #e4e461;
+}
+
+/* Títulos y textos */
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ec0808;
+}
+
+.header-texto h3,
+.header-texto h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.brand-description {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Botón de WhatsApp */
+.btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Logo */
+.header-logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+
+
+/* Sección 4 */
+
+.img-galeria {
+  width: 100%;
+  height: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-galeria:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Texto descriptivo */
+#galeria p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Estilo de imágenes */
+.img-galeria {
+  height: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive tipográfico */
+@media (max-width: 768px) {
+  #galeria h2 {
+    font-size: 2rem;
+  }
+
+  #galeria p {
+    font-size: 1rem;
+  }
+}
+
+/*  fin Sección 4 */
+
+
+/* Sección 3 */
+#servicios {
+  background-color: #e24d42;
+  color: #fff;
+}
+
+/* Título principal */
+.titulo-seccion {
+  font-size: 2.8rem;
+  color: #f1f4f7;
+  font-weight: 700;
+}
+
+/* Tarjeta de servicio */
+.servicio {
+  background-color: #ffffff;
+ border: 2px solid #e67e22;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Título de cada servicio */
+.servicio h3 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Lista de características */
+.servicio ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.servicio li {
+  background-color: #e9f5ff;
+  padding: 0.8rem 1rem;
+  border-left: 5px solid #60c2f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+/*  fin Sección 3 */
+
+
+
+.contenedor-mm {
+  background-color: #fdf6ec;
+  color: #333;
+}
+
+.media-box {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 ratio → puedes subir a 70%, 80%, etc. */
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #e67e22;
+}
+
+.objeto-ajustado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+
+
+.oferta-educativa h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.oferta-educativa .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.oferta-educativa .card-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.oferta-educativa .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
